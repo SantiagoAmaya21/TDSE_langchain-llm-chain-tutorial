@@ -1,15 +1,15 @@
-# LangChain LLM Chain Tutorial
+# LangChain LLM Chain Tutorial (Gemini Version)
 
 ## Project Overview
 
-This repository contains the implementation of a basic **LangChain LLM Chain** using OpenAI as the language model provider.
+This repository contains the implementation of a basic **LangChain LLM Chain** using **Google Gemini** as the language model provider instead of OpenAI.
 
 The objective of this project is to understand:
 
 * How LangChain structures prompts
 * How LLM chains are built
 * How prompt → model → output parser pipelines work
-* How to integrate OpenAI into LangChain
+* How to integrate Gemini into LangChain
 
 ---
 
@@ -21,7 +21,7 @@ User Input
 ↓
 ChatPromptTemplate
 ↓
-ChatOpenAI (LLM)
+Gemini LLM (ChatGoogleGenerativeAI)
 ↓
 Output Parser
 ↓
@@ -30,7 +30,7 @@ Final Response
 ### Components
 
 * **ChatPromptTemplate** → Structures system and user messages.
-* **ChatOpenAI** → Connects to OpenAI's GPT model.
+* **ChatGoogleGenerativeAI** → Connects to Google Gemini.
 * **StrOutputParser** → Parses raw model output into clean text.
 * **Chain Operator (|)** → Connects components in sequence.
 
@@ -41,8 +41,8 @@ Final Response
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/langchain-llm-chain-tutorial.git
-cd langchain-llm-chain-tutorial
+git clone https://github.com/your-username/langchain-llm-chain-gemini.git
+cd langchain-llm-chain-gemini
 ```
 
 ### Create virtual environment
@@ -64,8 +64,11 @@ pip install -r requirements.txt
 Create a `.env` file:
 
 ```
-OPENAI_API_KEY=your_real_key_here
+GOOGLE_API_KEY=your_real_key_here
 ```
+
+You can obtain your free API key from:
+Google AI Studio → https://aistudio.google.com/
 
 ---
 
@@ -80,10 +83,10 @@ You will be prompted to enter a topic.
 Example:
 
 ```
-Enter a topic: Retrieval-Augmented Generation
+Enter a topic: Machine Learning
 ```
 
-The model will generate an explanation.
+The model will generate an explanation using Gemini.
 
 ---
 
@@ -92,7 +95,7 @@ The model will generate an explanation.
 * How LangChain builds modular pipelines
 * Prompt engineering basics
 * How LLM chaining works internally
-* How to connect OpenAI models to LangChain
+* How to integrate Google Gemini with LangChain
 
 ---
 
@@ -100,6 +103,6 @@ The model will generate an explanation.
 
 * Python
 * LangChain
-* OpenAI API
+* Google Gemini API
 * dotenv
 
