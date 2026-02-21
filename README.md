@@ -90,6 +90,11 @@ The model will generate an explanation using Gemini.
 
 ---
 
+Evidence
+
+![imagen1](img/imagen1.png)
+
+
 ## What Was Learned
 
 * How LangChain builds modular pipelines
