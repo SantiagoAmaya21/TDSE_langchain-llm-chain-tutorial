@@ -1,4 +1,6 @@
-# LangChain LLM Chain Tutorial (Gemini Version)
+# TDSE - LangChain LLM Chain Tutorial (Gemini Version)
+
+Student Name: Santiago Amaya Zapata
 
 ## Project Overview
 
